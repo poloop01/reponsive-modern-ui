@@ -1,0 +1,118 @@
+<!DOCTYPE html> <!-- uses html5-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project of Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Header Section -->
+    <section class="about-header">
+        <nav>
+            <a href="index.html"><img src="https://images.unsplash.com/photo-1620288627223-53302f4e8c74?q=80&w=928&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-x fa" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="cars.html">Cars</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars fa" onclick="showMenu()"></i>
+        </nav>
+            <div>
+                <h1>Our Cars & new Brands 2026</h1>
+            </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image">
+                <h2>Our Cars & new Brands 2026</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia laborum repellendus iure ad, natus autem a vero, ut sed mollitia doloremque. Praesentium porro odit fuga! Culpa nemo recusandae laborum illumLorem, ipsum dolor sit amet consectetur adipisicing elit. Quia laborum repellendus iure ad, natus autem a vero, ut sed mollitia doloremque. Praesentium porro odit fuga! Culpa nemo recusandae laborum illum.</p>
+                <br>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut voluptas suscipit dolorem, asperiores non veritatis, esse culpa sapiente molestiae, voluptatibus natus ab officiis! Illum maxime suscipit voluptates. Velit, quasi officiis.</p>
+                <br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet perferendis quae ullam id ipsam nostrum. Excepturi, labore quas vitae distinctio nostrum repudiandae quasi asperiores deserunt, id itaque veniam esse quae?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut voluptas suscipit dolorem, asperiores non veritatis,</p>
+                <br>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis cupiditate ex necessitatibus, consequatur pariatur voluptatum ipsa omnis, impedit aliquam soluta saepe aliquid vel aspernatur aut perspiciatis tenetur illo. Nobis, dolores!</p>
+               
+                <div class="comment-box">
+                    <h3>Leave a comment</h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea placeholder="Your Comment" rows="5"></textarea>
+                        <button type="submit" class="hero-btn explore-hero-btn post-btn">POST COMMENT</button>
+                    </form>
+                </div>
+            
+            </div>
+
+            <div class="blog-right">
+                <h3>Cars Brands</h3>
+                <div>
+                    <span>Lamborghini</span>
+                    <span>12</span>
+                </div>
+                <div>
+                    <span>Bugatti</span>
+                    <span>8</span>
+                </div>
+                <div>
+                    <span>Porsche</span>
+                    <span>30</span>
+                </div>
+                <div>
+                    <span>Ferrari</span>
+                    <span>16</span>
+                </div>
+                <div>
+                    <span>Bentley</span>
+                    <span>4</span>
+                </div>
+                <div>
+                    <span>McLaren</span>
+                    <span>20</span>
+                </div>    
+                <div>
+                    <span>Tesla</span>
+                    <span>18</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <section class="footer">
+        <h4>About us</h4>
+        <p>At our dealership, we specialize in delivering exceptional cars that combine performance, reliability, and style. With a passion for automobiles and a commitment to customer satisfaction, We offer a carefully selected range of vehicles to suit every driver’s needs.</br> Whether you're looking for luxury, speed, or everyday comfort, our team is dedicated to helping you find the perfect car with confidence and ease.</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-github"></i>
+        </div>
+        <p>Made by Polo OP</p>
+    </section>
+
+    <!-- Menu toggle with JavaScript -->
+    <script>
+        var navLinks = document.getElementById('navLinks');
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

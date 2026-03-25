@@ -1,0 +1,105 @@
+<!DOCTYPE html> <!-- uses html5-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project of Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Header Section -->
+    <section class="about-header">
+        <nav>
+            <a href="index.html"><img src="https://images.unsplash.com/photo-1620288627223-53302f4e8c74?q=80&w=928&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-x fa" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="cars.html">Cars</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars fa" onclick="showMenu()"></i>
+        </nav>
+            <div>
+                <h1>Our Cars</h1>
+            </div>
+    </section>
+
+    <!-- Cars Section -->
+    <section class="cars">
+        <h1>Cars we offer</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, inventore nostrum optio et architecto aliquam nisi qui quasi explicabo temporibus ea vitae adipisci eveniet, nulla suscipit vel nemo consectetur aperiam!</p>
+    
+        <div class="row">
+            <div class="cars-col">
+                <h3>Lamborghini</h3>
+                <p>Italian supercars with bold, aggressive designs and roaring engines, made for adrenaline-fueled driving experiences.</p>
+            </div>
+            <div class="cars-col">
+                <h3>Bugatti</h3>
+                <p>A hypercar brand known for extreme speed, luxury, and precision engineering, combining performance and exclusivity.</p>
+            </div>
+            <div class="cars-col">
+                <h3>Porsche</h3>
+                <p>German engineering excellence with sporty, agile cars that balance track-ready performance and daily usability.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Companies Section -->
+    <section class="companies">
+        <h1>Our Cars</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+        <div class="row">
+            <div class="companies-col">
+                <img src="https://images.unsplash.com/photo-1696958363946-b58f40cda426?q=80&w=1828&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Companies images">
+                <h3>Aggressive, loud, exotic</h3>
+                <p>Aggressive design and roaring engines define its identity.
+Built for bold performance and attention-grabbing presence.</p>
+            </div>
+            <div class="companies-col">
+                <img src="https://images.unsplash.com/photo-1765973699508-12ca847a5aca?q=80&w=1750&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Companies images">
+                <h3>Extreme, elite, powerful</h3>
+                <p>Engineered for extreme speed and unmatched luxury.
+A symbol of elite craftsmanship and record-breaking performance.</p>
+            </div>
+            <div class="companies-col">
+                <img src="https://images.unsplash.com/photo-1713994255385-500d40dfbb1b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Companies images">
+                <h3>Precise, sporty, refined</h3>
+                <p>Precision engineering with everyday usability.
+Delivers sporty performance with refined control and balance.</p>
+            </div>    
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <section class="footer">
+        <h4>About us</h4>
+        <p>At our dealership, we specialize in delivering exceptional cars that combine performance, reliability, and style. With a passion for automobiles and a commitment to customer satisfaction, We offer a carefully selected range of vehicles to suit every driver’s needs.</br> Whether you're looking for luxury, speed, or everyday comfort, our team is dedicated to helping you find the perfect car with confidence and ease.</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-github"></i>
+        </div>
+        <p>Made by Polo OP</p>
+    </section>
+
+    <!-- Menu toggle with JavaScript -->
+    <script>
+        var navLinks = document.getElementById('navLinks');
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
